@@ -1,65 +1,68 @@
-body {
-    background: #6a11cb;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-}
-
-.login-container {
-    background: rgb(9, 9, 62);
-    max-width: 900px;
-    width: 100%;
-}
-
-.login-left {
-    background-color: #0d0d3f;
-    color: white;
-}
-
-.login-left h2 {
-    font-size: clamp(1.5rem, 5vw, 1.75rem);
-}
-
-.login-left p {
-    font-size: clamp(0.9rem, 3vw, 1rem);
-}
-
-.social-btn i {
-    margin-right: 8px;
-}
-
-.login-right {
-    background: white;
-}
-
-.login-right h3 {
-    font-size: clamp(1.25rem, 4vw, 1.5rem);
-}
-
-.login-right a {
-    font-size: clamp(0.85rem, 2.5vw, 0.9rem);
-}
-
-.form-control {
-    padding: 12px;
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
-}
-
-.btn {
-    padding: 12px;
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
-}
-
-@media (max-width: 767.98px) {
+    body {
+      background: hsl(265, 71%, 63%);
+      
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
     .login-container {
-        flex-direction: column;
+      display: flex;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+      overflow: hidden;
+      width: 850px;
+      max-width: 100%;
+    }
+    .login-left {
+      background: #1414a0;
+      color: #fff;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 40%;
+    }
+    .login-left h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .social-btn {
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+    .social-btn i {
+      margin-right: 8px;
+    }
+    .login-right {
+      padding: 50px 40px;
+      width: 60%;
+    }
+    .login-right h3 {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .login-right a {
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .form-control{
+        padding: 12px;
+    }
+    .btn{
+        padding: 12px;
     }
 
-    .login-left,
-    .login-right {
+    /* Mobile view: stack top/bottom */
+    @media (max-width: 768px) {
+      .login-container {
+        display: block;
+      }
+      .login-left,
+      .login-right {
         width: 100%;
+      }
     }
-
-    .login-right {
-        padding: 2rem;
-    }
-}
